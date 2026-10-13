@@ -1,0 +1,19 @@
+{
+  "name": "laser-sdk",
+  "interface": {
+    "displayName": "LaserData Laser SDK"
+  },
+  "plugins": [
+    {
+      "name": "laser-sdk",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

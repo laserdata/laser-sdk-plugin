@@ -1,0 +1,15 @@
+{
+  "name": "laser-sdk",
+  "description": "LaserData Laser SDK skills for coding agents.",
+  "owner": {
+    "name": "LaserData",
+    "url": "https://laserdata.com"
+  },
+  "plugins": [
+    {
+      "name": "laser-sdk",
+      "description": "Build with the Laser SDK: streaming, agents, sessions, memory, key-value and queries.",
+      "source": "./"
+    }
+  ]
+}

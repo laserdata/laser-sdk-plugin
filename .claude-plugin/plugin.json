@@ -1,0 +1,20 @@
+{
+  "name": "laser-sdk",
+  "displayName": "Laser SDK",
+  "version": "0.1.0",
+  "description": "Skills for building with the LaserData Laser SDK in Python, TypeScript and Rust: streaming, agents, sessions, memory, key-value and queries over Apache Iggy, Laser Stack and LaserData Cloud.",
+  "author": {
+    "name": "LaserData",
+    "url": "https://laserdata.com"
+  },
+  "homepage": "https://docs.laserdata.com/laser-sdk",
+  "repository": "https://github.com/laserdata/laser-sdk-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "laserdata",
+    "laser-sdk",
+    "apache-iggy",
+    "streaming",
+    "agents"
+  ]
+}
