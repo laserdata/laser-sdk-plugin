@@ -44,7 +44,7 @@ Never hard-code credentials. Read `LASER_CONNECTION_STRING` (and optional `LASER
 
 Hosts under `*.laserdata.cloud` and `*.laserdata.com` get TLS automatically with the CA bundled in the SDK. Do not add TLS options for them. `LASER_TLS_CERT=<path>` sets a CA for any other host. `LASER_NO_TLS=1` turns automatic TLS off.
 
-For a LaserData Cloud deployment, the username and password come from the Console Credentials tab or `laser deployment credentials --deployment-id <id> -o json`, and the host from `laser deployment get`. Never echo the password into chat or write it to a file the user did not name. Use a placeholder such as `${LASER_PASSWORD}` in snippets.
+For a LaserData Cloud deployment, the username and password come from the Console Credentials tab or `laser deployment credentials --deployment-id <id> -o json`, and the host from `laser deployment get`. Never echo the password into chat or write it to a file the user did not name. Use a placeholder such as `<password>` in snippets.
 
 Connecting gives up after 30 seconds (`LASER_CONNECT_TIMEOUT_MS` changes it).
 
