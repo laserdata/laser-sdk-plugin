@@ -16,5 +16,22 @@
     "apache-iggy",
     "streaming",
     "agents"
-  ]
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "LaserData Laser SDK",
+        "shortDescription": "Build with Laser SDK",
+        "longDescription": "Skills for building with the LaserData Laser SDK in Python, TypeScript and Rust: streaming, agents, sessions, memory, key-value and queries over Apache Iggy, Laser Stack and LaserData Cloud.",
+        "developerName": "LaserData",
+        "category": "Developer Tools",
+        "websiteURL": "https://laserdata.com",
+        "supportURL": "https://laserdata.com/contact",
+        "privacyPolicyURL": "https://laserdata.com/privacy-policy",
+        "termsOfServiceURL": "https://laserdata.com/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
 }
