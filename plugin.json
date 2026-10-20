@@ -42,6 +42,61 @@
           "Write an agent that keeps session memory with Laser SDK.",
           "Publish typed records to a stream with Laser SDK."
         ]
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Find how to connect",
+              "prompt": "How do I connect to Laser Stack from Python?",
+              "tools_triggered": "search_docs",
+              "expected_behavior": "Explain connecting with a LASER_CONNECTION_STRING and Laser.connect, quoting the Laser SDK docs with a link to the source page."
+            },
+            {
+              "description": "Look up an API signature",
+              "prompt": "What arguments does Laser.connect take in the Python SDK?",
+              "tools_triggered": "search_docs, get_doc",
+              "expected_behavior": "Return the connect signature from the Python API, including the connection string, address and credentials options, with a link to the stub source."
+            },
+            {
+              "description": "Find a code example",
+              "prompt": "Show me a TypeScript example that stores a value in agent memory.",
+              "tools_triggered": "find_examples",
+              "expected_behavior": "Return a TypeScript memory example from the Laser SDK docs with the page it came from."
+            },
+            {
+              "description": "Read related pages",
+              "prompt": "What should I read after the Laser SDK memory page?",
+              "tools_triggered": "get_doc, get_related_docs",
+              "expected_behavior": "List pages linked from or related to the memory page, such as sessions and agents, with links."
+            },
+            {
+              "description": "Answer a LaserData Cloud question",
+              "prompt": "How do I set up PrivateLink for a LaserData Cloud deployment?",
+              "tools_triggered": "search_docs, get_doc",
+              "expected_behavior": "Summarise the PrivateLink setup steps from the networking docs and link the page, without inventing account IDs or settings."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Request to change a deployment",
+              "prompt": "Delete my LaserData Cloud deployment."
+            },
+            {
+              "description": "Request for credentials",
+              "prompt": "Give me the root password for my Iggy server."
+            },
+            {
+              "description": "Unrelated question",
+              "prompt": "Book me a flight to Sydney."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "This plugin does not sell products or process payments."
+      },
+      "publication": {
+        "release_notes": "Initial release: Laser SDK skills for Python, TypeScript and Rust, and a read-only search over the LaserData documentation and the Laser SDK Python API."
       }
     }
   }
