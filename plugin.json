@@ -93,7 +93,8 @@
           ]
         },
         "commerce": false,
-        "commerce_description": "This plugin does not sell products or process payments."
+        "commerce_description": "This plugin does not sell products or process payments.",
+        "demo_recording_url": "https://youtu.be/KnVVjmlEiqo"
       },
       "publication": {
         "release_notes": "Initial release: Laser SDK skills for Python, TypeScript and Rust, and a read-only search over the LaserData documentation and the Laser SDK Python API."
