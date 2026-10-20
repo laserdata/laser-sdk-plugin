@@ -21,8 +21,8 @@
     "com.openai": {
       "interface": {
         "displayName": "LaserData Laser SDK",
-        "shortDescription": "Build with Laser SDK",
-        "longDescription": "Skills for building with the LaserData Laser SDK in Python, TypeScript and Rust: streaming, agents, sessions, memory, key-value and queries over Apache Iggy, Laser Stack and LaserData Cloud.",
+        "shortDescription": "Write code with Laser SDK",
+        "longDescription": "Helps developers write, run and test code that uses the LaserData Laser SDK in Python, TypeScript and Rust. The skills show your coding agent how to connect to Apache Iggy, Laser Stack or LaserData Cloud, publish and consume streams, build agents with sessions and memory, query key-value data, and add the SDK to an existing project.",
         "developerName": "LaserData",
         "category": "Developer Tools",
         "websiteURL": "https://laserdata.com",
@@ -30,7 +30,18 @@
         "privacyPolicyURL": "https://laserdata.com/privacy-policy",
         "termsOfServiceURL": "https://laserdata.com/terms",
         "composerIcon": "./assets/icon.png",
-        "logo": "./assets/icon.png"
+        "logo": "./assets/icon.png",
+        "capabilities": [
+          "Write Laser SDK code",
+          "Set up Laser SDK in a project",
+          "Build streaming agents with memory",
+          "Write handler tests"
+        ],
+        "defaultPrompt": [
+          "Add Laser SDK to this Python project.",
+          "Write an agent that keeps session memory with Laser SDK.",
+          "Publish typed records to a stream with Laser SDK."
+        ]
       }
     }
   }

@@ -22,8 +22,8 @@ Use the project's existing language: `pyproject.toml` or `requirements.txt` mean
 Ask which deployment unless the project already says:
 
 - **LaserData Cloud.** If the `laser` CLI is installed and signed in, get the host from `laser deployment get --deployment-id <id> -o json` and the credentials from `laser deployment credentials --deployment-id <id> -o json`. Otherwise the user copies the connection string from the Console Credentials tab. TLS is automatic for LaserData hosts.
-- **Laser Stack** (local, every feature): in a laser-stack checkout run `./scripts/up` and use the `LASER_CONNECTION_STRING` it prints.
-- **Apache Iggy** (streaming and agents only). The 0.9.0 image refuses to start without an advertised address, and needs io_uring allowed:
+- **Laser Stack** (local, every feature): ask the user to start it by following https://docs.laserdata.com/laser-sdk/laser-stack, and use the `LASER_CONNECTION_STRING` it prints.
+- **Apache Iggy** (streaming and agents only). Ask the user to start a server. The 0.9.0 image refuses to start without an advertised address, and needs io_uring allowed, so give them this command to run:
 
   ```sh
   docker run -d --name iggy --security-opt seccomp=unconfined -p 8090:8090 \

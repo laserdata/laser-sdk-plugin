@@ -14,15 +14,9 @@ On a long-lived connection, `refresh_capabilities()` / `refreshCapabilities()` r
 
 ## Run them locally: Laser Stack
 
-```sh
-git clone https://github.com/laserdata/laser-stack
-cd laser-stack
-./scripts/up
-```
+Laser Stack runs the Iggy fork and `laser-plane` in Docker and supports every SDK feature except Cloud-only UI. Do not clone or start it yourself. Ask the user to start it by following https://docs.laserdata.com/laser-sdk/laser-stack, then to export the `LASER_CONNECTION_STRING` it prints in the shell you run code from.
 
-`./scripts/up` prints a `LASER_CONNECTION_STRING` export. Laser Stack runs the Iggy fork and `laser-plane` in Docker and supports every SDK feature except Cloud-only UI.
-
-The images use the `latest` tag, so a machine can hold stale ones. If managed calls fail with `TransportError: Invalid format` while `capabilities()` reports them available, the images are older than the SDK: run `docker compose pull` in the checkout and restart. SDK 0.8.0 works with `iggy-server` 0.9.4-ld and `laser-plane` 0.23.0.
+Its images use the `latest` tag, so a machine can hold stale ones. If managed calls fail with `TransportError: Invalid format` while `capabilities()` reports them available, the images are older than the SDK: ask the user to pull the latest images and restart Laser Stack. SDK 0.8.0 works with `iggy-server` 0.9.4-ld and `laser-plane` 0.23.0.
 
 ## Key-value state
 
